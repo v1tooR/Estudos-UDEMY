@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs</title>
+    <style type="text/css">
+       #topo{
+        background-color: #232e3f;
+       }
+
+       #topo ul li{
+        color: white;
+        text-decoration: none;
+        list-style: none;
+       }
+
+       #conteudo{
+        background-color: #232e3f;
+        color: white;
+       }
+
+       .produto{
+        background-color: #151c26;
+        padding: 10px;
+       }
+
+       #conteudo-margin{
+        background-color: #232e3f;
+        color: white;
+       }
+
+       .produto-margin{
+        background-color: #151c26;
+        margin: 10px;
+       }
+
+       #rodape{
+        background-color: rgb(255, 208, 0);
+       }
+
+       .azul{
+        color: blue;
+       }
+    </style>
+</head>
+<body>
+    <div id="topo">
+        <img src="./assets/logo-amazon.jpg" width="200">
+        <ul>
+            <li>Home</li>
+            <li>Produtos</li>
+            <li>Contato</li>
+        </ul>
+    </div>
+
+    <!--diferença de margin para padding-->
+
+    <div id="conteudo">
+        <div class="produto">
+            Produto 1
+        </div>
+        <div class="produto">
+            Produto 2
+        </div>
+        <div class="produto">
+            Produto 3
+        </div>
+    </div>
+
+    <!--Margin para class-->
+
+    <div id="conteudo-margin">
+        <div class="produto-margin">
+            Produto 1
+        </div>
+        <div class="produto-margin">
+            Produto 2
+        </div>
+        <div class="produto-margin">
+            Produto 3
+        </div>
+    </div>
+
+    <div id="rodape">
+        Todos os <span class="azul"> diretos</span> reservados
+    </div>
+</body>
+</html>
