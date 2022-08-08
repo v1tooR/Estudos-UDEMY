@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cor e imagem de fundo</title>
+    <style>
+        /*.fundo{
+            background:;
+        }*/
+        body{
+            background-image: url('./assets/yoshi.png');
+            background-attachment: fixed; 
+            /*scroll também*/
+
+            background-position: right center; 
+            /*
+            primeiro valor: left, center, right
+            segundo valor: top, center, bottom 
+            */
+
+            background-repeat: no-repeat; 
+            /*repeat-x: as imagens na horizontal. Mesma lógica para Y*/
+        }
+    </style>
+</head>
+<body>
+    <h1 class="fundo">Conteudo 1</h1>
+</body>
+</html>
