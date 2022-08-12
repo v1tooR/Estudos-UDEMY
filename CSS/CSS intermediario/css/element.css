@@ -1,0 +1,25 @@
+.conteudo{
+    background-color: bisque;
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+}
+.conteudo1{
+    background-color: aquamarine;
+    width: 200px;
+    border: 1px solid red;
+    margin: 10px;
+    height: 200px;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+#principal{
+    background-color: black;
+    border: 1px solid red;
+}

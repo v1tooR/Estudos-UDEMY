@@ -1,0 +1,25 @@
+/*.conteudo{
+    border: 1px solid red;
+    padding-top: 20px;  ---> Espaçamento interno
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding: 20px;
+
+    margin: 20px; ---> espaçamento externo
+}
+
+.conteudo2{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid red;
+}*/
+
+#noticia{
+    background-color: blue;
+    padding: 10px;
+}
+
+h2{
+    margin: 0px;
+}
