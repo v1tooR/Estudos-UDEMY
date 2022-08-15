@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+#container{
+    background: #FFF;
+    width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+}
+h1{
+    position: static;
+}
+p{
+    width: 400px;
+    position: static;
+}
+.relative{
+    border: 1px solid red;
+    position: relative;
+    left: 200px;
+    /*top,right,bottom,left*/
+}

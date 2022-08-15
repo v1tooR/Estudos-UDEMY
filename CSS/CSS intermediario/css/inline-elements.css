@@ -1,0 +1,16 @@
+.borda{
+    border: 1px solid red;
+    margin-bottom: 10px;
+    display: block; /*Sempre ocupa todo o espaçamento da tela (parecido com uma lista)*/
+}
+
+.borda2{
+    margin-right: 10px;
+    border: 1px solid red;
+    display: inline; /*Deixa os itens um ao lado do outro*/
+}
+.borda3{
+    margin: 10px 0px 0px 0px;
+    border: 1px solid red;
+    display: inline-block; /*Deixa os itens um ao lado do outro*/
+}
