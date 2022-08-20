@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobrepondo</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .conteudo1{
+            border: 1px solid red;
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 2;/*aprensenta o primeiro item, muda ordem*/
+        }
+        .conteudo2{
+            border: 1px solid red;
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            z-index: 1;
+        }
+        .conteudo3{
+            border: 1px solid red;
+            background-color: rgb(255, 9, 9);
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 160px;
+            left: 160px;
+            z-index: 1; /*pode ficar na mesma posição de ordem*/
+        }
+        a{
+            padding: 13px;
+            text-decoration: none;
+        }
+        a:link{
+            color: rgb(152, 152, 215);
+        }
+        a:visited{
+            color: brown;
+        }
+        a:hover{
+            color: white;
+            background-color: #6d790f;
+        }
+        a:active{
+            color:#e4f371; /*quando clicado*/
+        }
+    </style>
+</head>
+<body>
+    <!--
+    <div class="conteudo1">
+        aaaaa
+    </div>
+    <div class="conteudo2">
+        bbbbb
+    </div>
+    <div class="conteudo3">
+        ccccccccc
+    </div>-->
+
+    <!--formatando links-->
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://br.linkedin.com/">Linkedin</a>
+    <a href="https://merda.com/">lindkdeferente</a>
+</body>
+</html>

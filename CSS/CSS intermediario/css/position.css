@@ -1,11 +1,13 @@
 body{
     background-color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 #container{
     background: #FFF;
     width: 800px;
     margin: 20px auto;
     padding: 10px;
+    position: relative;
 }
 h1{
     position: static;
@@ -13,6 +15,20 @@ h1{
 p{
     width: 400px;
     position: static;
+}
+.fixed{
+    position: fixed;
+    border: 1px solid red;
+    background-color: white;
+    top: 0px;
+    left: 0px;
+}
+.absolute{
+    position: absolute;
+    border: 1px solid red;
+    background-color: white;
+    top: 80px;
+    right:80px;
 }
 .relative{
     border: 1px solid red;
