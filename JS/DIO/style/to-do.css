@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+}
+body{
+    background-color: rgb(28, 27, 27);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    margin: 10px;
+}
+
+
+#task-form input{
+    font-size: 15px;
+    width: 300px;
+    background-color: rgb(16, 16, 16);
+    border-style: none;
+    padding: 13px;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+}
+#task-form button{
+    font-size: 15px;
+    padding: 12px;
+    border-style: none;
+    border-radius: 10px;
+}
+#tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#tasks input{
+    width: 60px;
+}
+
+label{
+    font-size: 15px;
+}
+
+:checked + label {
+    text-decoration: line-through;
+    color: grey;
+}
