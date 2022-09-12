@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    margin: 10px;
+}
+form input{
+    margin: 10px;
+    border-radius: 50px;
+    border-style: none;
+    box-shadow: 0 0 1em black;
+    background-color: rgb(200, 200, 200);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 5px;
+}
+form select{
+    border-radius: 50px;
+    border-style: none;
+    box-shadow: 0 0 1em black;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(200, 200, 200);
+    padding: 5px;
+    font-size: 17px;
+}
+form #btn_calcular{
+    padding-inline: 20px;
+}
+p{
+    font-size: 20px;
+}
