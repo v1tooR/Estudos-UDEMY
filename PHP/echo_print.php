@@ -8,19 +8,11 @@
 </head>
 <body>
     <?php
-        echo 'tag padrão';
-        // comentario de linha
+        echo 'Comando echo<br>';
 
-        /* 
-        comentario de multiplas linhas
-        olha só
-        */
+        print 'Comando print<hr>';
+
+        echo print("Comando echo print retornando = ");
     ?>
-    <br>
-    <?= 'tag de impressão // Como um "echo" '?>
-    <br>
-    <? echo 'tag curta' ?>
-
-    
 </body>
 </html>
