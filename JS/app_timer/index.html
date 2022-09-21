@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Temporizador</title>
+</head>
+<body>
+	<audio id="sound" style="display: none;" src="alarme.mp3"></audio>
+
+	<div class="container">
+		<h2>
+			Minutos: 
+		</h2>
+		<select id="minutos" name="minutos"></select>
+		<h2>
+			Segundos: 
+		</h2>
+		<select id="segundos" name="segundos"></select>
+		<br>
+		<button id="comecar">Iniciar</button>
+
+		<div id="display"> <!-- display -->
+			<h3></h3>
+		</div>
+	</div>
+
+	
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
