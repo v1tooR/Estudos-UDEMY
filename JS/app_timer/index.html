@@ -7,25 +7,35 @@
 	<title>Temporizador</title>
 </head>
 <body>
-	<audio id="sound" style="display: none;" src="alarme.mp3"></audio>
-
+	
 	<div class="container">
-		<h2>
-			Minutos: 
-		</h2>
-		<select id="minutos" name="minutos"></select>
-		<h2>
-			Segundos: 
-		</h2>
-		<select id="segundos" name="segundos"></select>
-		<br>
-		<button id="comecar">Iniciar</button>
+		<div class="container-alarm">
+			<!-- <img src="" alt=""> -->
+			<h1>
+				00:00:00 PM
+			</h1>
+			<div class="content">
+				<div class="controls">
+					<select>
+						<option value="Hour" selected disabled hidden> Horas</option>
+					</select>
+				</div>
 
-		<div id="display"> <!-- display -->
-			<h3></h3>
+				<div class="controls">
+					<select>
+						<option value="Minute" selected disabled hidden> Minutos</option>
+					</select>
+				</div>
+
+				<div class="controls">
+					<select>
+						<option value="AM/PM" selected disabled hidden> AM/PM</option>
+					</select>
+				</div>
+			</div>
+			<button>Ativar alarme</button>
 		</div>
 	</div>
-
 	
 	<script type="text/javascript" src="script.js"></script>
 </body>

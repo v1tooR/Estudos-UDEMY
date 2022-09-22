@@ -1,43 +1,71 @@
-let display = document.getElementById('display');
+// Delcaração de variáveis para interagit com o html
+const currentTime = document.querySelector("h1");
+const content = document.querySelector('.content');
+const selectMenu = document.querySelectorAll('select');
+const btnSetAlarm = document.querySelector('button');
 
-let minutos = document.getElementById('minutos');
-let segundos = document.getElementById('segundos');
-let comecar = document.getElementById('comecar');
+setInterval(() => {
+	let date = new Date();
+	let hours = date.getHours();
+	let minutes = date.getMinutes();
+	let seconds = date.getSeconds();
+	ampm = "AM";
 
+	if(hours >= 12){
+		hours = hours -12;
+		ampm = "PM";
+	}
 
-let cronometroSeg;
+	hours = hours == 0 ? hours = 12 : hours;
+	hours = hours < 10 ? "0" + hours : hours;
+	minutes = minutes < 10 ? "0" + minutes : minutes;
+	seconds = seconds < 10 ? "0" + seconds : seconds;
 
-let minAtual;
-let segAtual;
+	currentTime.innerHTML = `${hours}:${minutes}:${seconds} ${ampm}`;
 
-let interval;
+	if(alarmTime === `${hours}:${minutes} ${ampm}`){
+		ringTone.play();
+		ringTone.loop = true;
+	}
 
-for(i = 0; i <= 60; i++){
-	minutos.innerHTML+= '<option value="'+i+'">'+i+'</option> ';
+});
+
+let alarmTime, isAlarmSet, ringTone = new Audio("./alarme.mp3");
+
+for (let i = 12; i > 0; i--){
+	i = i < 10 ? `0${i}` : i;
+	let option = `<option value="${i}">${i}</option>`;
+	selectMenu[0].firstElementChild.insertAdjacentHTML("afterend", option);
 }
-for(i = 1; i <= 60; i++){
-	segundos.innerHTML+= '<option value="'+i+'">'+i+'</option> ';
+
+for (let i = 59; i >= 0; i--) {
+    i = i < 10 ? `0${i}` : i;
+    let option = `<option value="${i}">${i}</option>`;
+    selectMenu[1].firstElementChild.insertAdjacentHTML("afterend", option);
 }
 
-comecar.addEventListener('click', function(){
-	minAtual = minutos.value;
-	segAtual = segundos.value;
+for (let i = 2; i > 0; i--) {
+    let ampm = i == 1 ? "AM" : "PM";
+    let option = `<option value="${ampm}">${ampm}</option>`;
+    selectMenu[2].firstElementChild.insertAdjacentHTML("afterend", option);
+}
 
-	display.childNodes[1].innerHTML = minAtual + ":" + segAtual;
+function setAlarm(){
+	if (isAlarmSet){
+		alarmTime = "";
+		ringTone.pause();
+		content.classList.remove("disable");
+		btnSetAlarm.innerHTML = "Ativar Alarme";
+		return isAlarmSet = false;
+	}
 
-	interval = setInterval(function(){
-
-		segAtual--;
-		if(segAtual <= 0){
-			if (minAtual > 0) { //se o minuto for maior que 0, o segundo faz o loop
-				minAtual--;
-				segAtual = 59;
-			}else{
-				alert("Acabou o tempo!");
-				document.getElementById("sound").play();
-				clearInterval(interval);
-			}
-		}
-		display.childNodes[1].innerHTML = minAtual + ":" + segAtual;
-	},1000);
-})
+	let time = `${selectMenu[0].value}:${selectMenu[1].value}:${selectMenu[2].value}`;
+	if (time.includes("Hour") || time.includes("Minute") || time.includes("AM/PM")){
+		return alert("Insira horas e minutos válidos para ativar o alarme, por favor!");
+	}
+	alarmTime = time;
+	isAlarmSet = true;
+	content.classList.add("disable");
+	btnSetAlarm.innerHTML = "Desativar Alarme";
+}
+btnSetAlarm.addEventListener("click", setAlarm);
