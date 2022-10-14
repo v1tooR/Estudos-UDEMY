@@ -1,0 +1,19 @@
+*{
+	font-size: 15px;
+} /*pega o geral*/
+/*
+body{
+	color: red;
+	border: 1px solid red;
+	background-color: darkgray;
+}
+*/
+p{
+	color: blue;
+}
+p{
+	color: red !important; /* para ficar como prioridade */
+}
+
+/*sempre o ultimo seletor q adiquiri a caracteristica*/
+/* o  seletor mais especifico entra em prioridade */

@@ -1,0 +1,31 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    width: auto;
+    background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x;
+    float: left;
+}
+ul li{
+    float: left;
+}
+ul a{
+    text-decoration: none;
+    display: block;
+    padding: 0 2em;
+    line-height: 3em;
+    color: white;
+    background: url(../imagens/divisor.png) repeat-y left top;
+}
+ul a:hover{
+    color: #085662;
+    background: #44cade;
+}
+
+.primeiro ul a{
+    background: none;
+}
+
