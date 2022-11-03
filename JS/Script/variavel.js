@@ -1,12 +1,9 @@
-//string
-
+// Textos === string
 var texto = 'Meu teste';
-// number
-
+// Números inteiros e decimais === inteiros e flutuantes
 var numeroInteiro = 7;
 var numeroFracionado = 103.10;
-//boolean
-
+// Verdadeiro ou Falso === Boolean 
 var teste = true;
 
 //alert(numeroFracionado)

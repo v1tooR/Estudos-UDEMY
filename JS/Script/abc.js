@@ -1,6 +1,7 @@
-var a = 10
+var a = 10  /*"a" funciona como esta vaga e é atribuída a
+um valor, como '10'*/
 var b = 20
-var c = null //auxiliar
+var c = null 
 
 document.write('A: ' + a + '<br>')
 document.write('B: ' + b + '<br>')
