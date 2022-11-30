@@ -7,3 +7,15 @@ if (3 == 3 && 2 >= 6) {
 } else {
   document.write('falso')
 }
+
+if (3 == 3 || 2 >= 6) {
+  document.write('Verdadeiro')
+} else {
+  document.write('falso')
+}
+
+if (3 !== '3') {
+  document.write('Verdadeiro')
+} else {
+  document.write('falso')
+}

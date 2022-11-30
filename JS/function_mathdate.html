@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        var x = Math.ceil(10.180) // espera valor fracionado = ceil - valor acima
+        document.write(x)
+
+        var y = Math.floor(10.500) // o valor mais proximo a baixo
+        document.write('<br>' + y)
+
+        
+        var z = Math.round(10.600) // o valor mais proximo dps da media
+        document.write('<br>' + z)
+
+        // -------------------------------------
+        document.write("<br> -----------------------------------")
+
+        var data = new Date() //objeto
+
+        document.write("<br>Data: "+data.getDate()+'/'+(data.getMonth() + 1 ) + '/' + data.getFullYear())
+    </script>
+</body>
+</html>
