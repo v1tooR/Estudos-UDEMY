@@ -4,6 +4,8 @@ console.log(document.getElementsByClassName('campo_texto')) // pegar class
 console.log(document.getElementsByName('nome')) // pegar id
 */
 
+//manipulando objetos
+/*
 function distribuiCaracter(){ // onkeyup = para capturar valor digitado, sem precisar submeter
     var caracter = document.getElementById('entrada').value
     document.getElementById('entrada').value = ''
@@ -27,4 +29,16 @@ function distribuiCaracter(){ // onkeyup = para capturar valor digitado, sem pre
         default:
             document.getElementById('letras').value = caracter
     }
-}
+}*/
+
+/**
+ *
+ * function modificaEstilo(corDeFundo){
+    document.getElementById('quadrado').style.backgroundColor = corDeFundo
+    } 
+ *
+ */
+
+    function modificaClasse(){
+        document.getElementById('mensagem').className = 'estilo-2'
+    }
