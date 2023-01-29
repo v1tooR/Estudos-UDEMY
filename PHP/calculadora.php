@@ -56,3 +56,6 @@
     </form>
 </body>
 </html>
+
+
+opt/lampp - sudo ./manager-linux-x64.run
