@@ -20,3 +20,6 @@ lista_coisas['pessoas']['c'] = 'Maria'
 
 
 document.write(lista_coisas['numeros'][3])
+
+//array incluir/remover
+
