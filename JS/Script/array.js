@@ -23,3 +23,18 @@ document.write(lista_coisas['numeros'][3])
 
 //array incluir/remover
 
+var lista_itens = Array('maçã', 'banana', 'uva')
+console.log(lista_itens)
+
+    
+    //incluir elemento no final do array
+    lista_itens.push('morango')
+    //incluir no inicio do array
+    lista_itens.unshift('pêra')
+    //excluir no final do array
+    lista_itens.pop()
+    //excluir no inicio do array
+    lista_itens.shift()
+
+    lista_itens['pessoas'] = []
+    lista_itens['pessoas'].push('Vitor')
