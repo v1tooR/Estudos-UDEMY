@@ -8,14 +8,21 @@
     <link rel="stylesheet" href="./style/to-do.css">
 </head>
 <body>
-    <h1>To-do list</h1>
-    <div id="list">
-        <form id="task-form">
-            <input id="task-input" name="tarefa" type="text" placeholder="Digite aqui sua tarefa" />
-            <button type="submit">Adicionar</button>
-        </form>
-        <div id="tasks"></div>
-    </div>
+    <div id="myDIV" class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      
+      <ul id="myUL">
+        <li>Hit the gym</li>
+        <li class="checked">Pay bills</li>
+        <li>Meet George</li>
+        <li>Buy eggs</li>
+        <li>Read a book</li>
+        <li>Organize office</li>
+      </ul>
+      
     <script src="./js/to-do.js"></script>
 </body>
 </html>

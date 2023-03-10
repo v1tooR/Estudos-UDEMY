@@ -1,29 +1,37 @@
-const form = document.getElementById('task-form');
-const taskList = document.getElementById('tasks');
+var nodeList = document.getElementsByTagName("LI")
 
-form.onsubmit = function (e) {
-	e.preventDefault();
-	const inputField = document.getElementById('task-input');
-	addTask(inputField.value);
-	form.reset();
-};
+for( i = 0; i < nodeList.length; i++){
+	var span = document.createElement("SPAN")
+	var txt = document.createTextNode("\u00D7")
+	span.className = "close"
+	span.appendChild(txt)
+	nodeList[i].appendChild(span)
+}
 
-function addTask(description) {
-	const taskContainer = document.createElement('div');
-	const newTask = document.createElement('input');
-	const taskLabel = document.createElement('label');
-	const taskDescriptionNode = document.createTextNode(description);
+var close = document.getElementsByClassName("close")
+for(i = 0; i< close.length; i++){
+	close[i].onclick = function(){
+		var div = this.parentElement;
+		div.style.display = "none"
+	}
+}
 
-	newTask.setAttribute('type', 'checkbox');
-	newTask.setAttribute('name', description);
-	newTask.setAttribute('id', description);
+var list = document.querySelector('ul')
+list.addEventListener('click', function(ev){
+	if(ev.target.tagName === 'LI'){
+		ev.target.classList.toggle('checked')
+	}
+},false	)
 
-	taskLabel.setAttribute('for', description);
-	taskLabel.appendChild(taskDescriptionNode);
-
-	taskContainer.classList.add('task-item');
-	taskContainer.appendChild(newTask);
-	taskContainer.appendChild(taskLabel);
-
-	taskList.appendChild(taskContainer);
+function newElement(){
+	var li = document.createElement("li")
+	var inputValue = document.getElementById("myInput").value;
+	var t = document.createTextNode(inputValue)
+	li.appendChild(t)
+	if(inputValue === ''){
+		alert("Escreva algo!")
+	}else{
+		document.getElementById("myUL").appendChild(li)
+	}
+	document.getElementById("myInput").value = "";
 }
