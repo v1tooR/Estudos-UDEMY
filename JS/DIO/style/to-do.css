@@ -8,62 +8,10 @@
     font-family: 'Manrope', sans-serif;
 }
 
-/*body{
-    background-color: rgb(28, 27, 27);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-h1{
-    text-align: center;
-    margin: 10px;
-}
-
-
-#task-form input{
-    font-size: 15px;
-    width: 300px;
-    background-color: rgb(16, 16, 16);
-    border-style: none;
-    padding: 13px;
-    border-radius: 10px;
-    color: white;
-    margin: 10px;
-    box-shadow: 0 0 1em black;
-}
-#task-form button{
-    font-size: 15px;
-    padding: 12px;
-    border-style: none;
-    border-radius: 10px;
-}
-#tasks {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-  }
-.task-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-#tasks input{
-    width: 60px;
-}
-
-label{
-    font-size: 15px;
-}
-
-:checked + label {
-    text-decoration: line-through;
-    color: grey;
-}*/
 body {
-    margin: 0;
+    margin: 100px;
     min-width: 250px;
+    background-color: #1f1f1f;
   }
   
   * {
@@ -71,8 +19,9 @@ body {
   }
   
   ul {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    width: 60%;
   }
   
   ul li {
@@ -83,6 +32,7 @@ body {
     background: #eee;
     font-size: 18px;
     transition: 0.2s;
+    border-radius: 15px;
     
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -99,22 +49,9 @@ body {
   }
   
   ul li.checked {
-    background: #888;
+    background: #405c2d;
     color: #fff;
     text-decoration: line-through;
-  }
-  
-  ul li.checked::before {
-    content: '';
-    position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
   }
   
   .close {
@@ -122,15 +59,17 @@ body {
     right: 0;
     top: 0;
     padding: 12px 16px 12px 16px;
+    transition: 0.3s;
   }
   
   .close:hover {
     background-color: #f44336;
     color: white;
+    border-radius: 15px;
   }
   
   .header {
-    background-color: #f44336;
+  
     padding: 30px 40px;
     color: white;
     text-align: center;
@@ -143,26 +82,26 @@ body {
   }
   
   input {
-    margin: 0;
+    margin: 17px 10px 10px 10px;
     border: none;
-    border-radius: 0;
-    width: 75%;
+    border-radius: 015px;
+    width: 50%;
     padding: 10px;
-    float: left;
+    float: center;
     font-size: 16px;
   }
   
   .addBtn {
     padding: 10px;
-    width: 25%;
+    width: 30%;
     background: #d9d9d9;
     color: #555;
-    float: left;
+    float: center;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 0;
+    border-radius: 15px;
   }
   
   .addBtn:hover {
