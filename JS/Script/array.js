@@ -37,4 +37,27 @@ console.log(lista_itens)
     lista_itens.shift()
 
     lista_itens['pessoas'] = []
-    lista_itens['pessoas'].push('Vitor')
+    lista_itens['pessoas'].push('Vitor', 'Diego', 'Joao')
+
+//array método de pesquisa
+
+var lista_celular = Array('iphone', 'samsung', 'motorola', 'nokia')
+var auxiliar = lista_celular.indexOf('samsung') // fazer a pesquisa dentro do array
+ 
+
+if(auxiliar === -1){
+    console.log('Elemento não existe')
+}else{
+    console.log('Elemento existe na posição: ' + auxiliar)
+}
+
+//ordenação de array
+
+console.log(lista_itens.sort(ordenaNumeros)) // ordenação
+
+function ordenaNumeros(a, b){
+    return a - b
+    // < 0 = a ordenado antes de b
+    // > 0 = b é ordenado antes de a
+    //  == a ordem é mantida
+}
