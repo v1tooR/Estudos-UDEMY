@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+p{
+    font-family: monospace;
+    border-right: 4px solid;
+    width: 21ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: digitar 2s steps(21),
+    piscar 0.5s infinite step-end alternate;
+}
+@keyframes digitar{
+    from{
+        width: 0;
+    }
+}
+@keyframes piscar{
+    50%{
+        border-color: transparent;
+    }
+}
