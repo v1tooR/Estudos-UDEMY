@@ -52,7 +52,7 @@
         <input id="btn_calcular" type="submit" value="Calcular"/>
         <br><br>
         <!--$resultado = forma de representar o resultado dentro da web -->
-        <p> O resultado é <?= $resultado ?></p>
+        <p> O resultado é: <?= $resultado ?></p>
     </form>
 </body>
 </html>
